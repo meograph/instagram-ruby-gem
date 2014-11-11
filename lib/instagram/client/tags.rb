@@ -14,7 +14,7 @@ module Instagram
       # @rate_limited true
       # @see http://instagram.com/developer/endpoints/tags/#get_tags
       def tag(tag, *args)
-        response = get("tags/#{tag}")
+        response = get("tags/#{tag}", {:count=>41})
         response
       end
 
